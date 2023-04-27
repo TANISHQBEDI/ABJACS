@@ -1,0 +1,420 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-image: url("http://www.abjacs.com/wp-content/uploads/2016/02/blue-texture.jpg");
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.App{
+  margin: 0 9%;
+  background-color: rgb(255, 255, 255);
+}
+/* .paddingTop{
+  padding: 115px 0 0 0;
+} */
+.minPageHeight{
+  min-height: 576px;
+}
+
+p{
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+/* NAVBAR */
+
+.navBar{
+  z-index: 10;
+}
+
+.navbar-nav a{
+  color: rgb(46, 157, 205);
+}
+.navbar-nav a:hover{
+  color: rgb(35, 118, 154);
+}
+.dropdown-menu{
+  background-color: black !important; 
+}
+.dropdown-toggle.show{
+  color: bisque;
+}
+.dropdown-menu a:hover{
+  background-color: #1b1b1b;
+  color: white;
+}
+.dropdown-divider{
+  background: rgb(46, 157, 205);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show.nav-link{
+  color: rgb(35, 118, 154) !important;
+}
+
+.pageTitle{
+  width: 100%;
+  display: flex;
+}
+h3{
+  margin: auto;
+}
+
+/* NAVBAR */
+
+/* SIDEBAR */
+
+
+.dropCont{
+  min-height: 576px;
+}
+.dropCont .row{
+  min-height: 576px;
+}
+.dropCont .sideBar{
+  border-right: #00bfff 1px solid;
+  
+  text-align: right;
+  /* justify-content: center; */
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  padding-top: 10%;
+}
+
+.dropCont .sideBar ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropCont .sideBar ul li{
+  height: 40px;
+  padding-right: 50px;
+  
+}
+.dropCont .sideBar ul li a{
+  text-decoration: none;
+  /* color: #999999; */
+  color: #1b949e;
+}
+
+.dropCont .sideBar ul li a:hover{
+  color: #076483;
+}
+
+.dropCont .sideBar ul li a.active{
+  color: black;
+  
+}
+.dropCont .sideBar ul li.active{
+  
+  z-index: 1;
+  border: rgb(255, 255, 255) 2px solid;
+  box-shadow: 2px 2px white;
+}
+
+#title{
+  position: absolute;
+  height: 50px !important;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+}
+/* #title .col-md-3{ 
+  display: flex
+} */
+#title{
+  text-align: center;
+  /* color: #999999; */
+  color: #076483;
+}
+
+/* SIDEBAR */
+
+/* HOME CONTENT */
+
+.homeCont{
+  margin: 0 20px 0 20px;
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  font-size:larger;
+  font-weight: 400;
+  gap: 20px;
+}
+
+.carousel-inner .carousel-item,.carousel-inner .carousel-item .carousel-caption{
+  height:100%;
+}
+.listCarHead{
+  float: left;
+  color: black;
+  transform: scale(1.5);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listCarCont{
+  /* transform: scale(1.5); */
+  margin: 50px 0;
+  float: right;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: flex-end; */
+}
+
+.parCarHead:nth-child(1){
+  opacity: 0;
+}
+
+
+.parCarCont,.parCarHead{
+  color: black;
+}
+
+
+.carousel-list-item{
+  /* opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards; */
+  background: white;
+  color: black;
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.cardCont{
+  margin: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutLearnMore{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutLearnMore h2{
+  text-align: center;
+}
+
+
+.aboutServItem{
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamCont{
+  margin: 0 50px;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.teamCont .team{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 100px;
+}
+.team .card-img-top{
+  height: 360px;
+  width: 358px;
+  background-size: contain;
+}
+
+.team .card-body{
+  width: 358px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.team .card-text{
+  padding: 0;
+  margin: 0;
+}
+
+.team .card-text:nth-child(1){
+  margin-top: 30px;
+}
+.team .card-text:nth-child(3){
+  margin-top: 30px;
+}
+
+
+.teamCont .team > .card{
+  display: block !important;
+  border: none;
+}
+
+.teamCont .team .card > .card-body{
+  display: block !important;
+}
+
+
+/* HOME CONTENT */
+
+
+/* TIMELINE */
+.vertical-timeline-element-date{
+  font-size: 2em !important;
+  /* color: #1b949e !important; */
+}
+.may,.apr{
+  color: #1b949e !important;
+}
+
+
+.oct,.aug{
+  color: #f58636 !important;
+}
+
+.vertical-timeline-element-content img{
+  height: 100px;
+}
+
+/* TIMELINE */
+
+/* EXECUTIVE LEADERSHIP */
+
+.leadershipCont{
+  display: flex;
+  flex-direction: row;
+}
+
+.leadershipCont .card-title{
+  color: #076483;
+}
+.leadershipCont .card-text{
+  color:#999999;
+}
+
+/* EXECUTIVE LEADERSHIP */
+
+
+/* CLIENTS */
+
+.clientCont{
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.clientCont .card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.clientImg{
+  margin: auto;
+  height: 87px;
+  width: 130px !important;
+}
+.clientCont .card-title{
+  color: #076483;
+}
+/* CLIENTS */
+
+/* LOCATIONS */
+
+.locationCont{
+  line-height: normal;
+}
+
+/* LOCATIONS */
+
+/* FOOTER */
+
+#footer{
+  /* height: 50px; */
+  height: auto;
+  padding: 12px 3% 0;
+  display: flex;
+  align-items: center;
+  background-color: #1b1b1b;
+  color: #777777 ;
+  justify-content:space-between;
+  
+}
+#footer p{
+  width: 50%;
+}
+#footer .social{
+  text-decoration: none;
+  list-style-type: none;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#footer a{
+  color: #777777 ;
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+.bottom{
+  height: 80px;
+  background-color: #076483;
+}
+
+
+
+
+
+
+@media screen and (max-width:1050px){
+  .App{
+    margin: 0;
+  }
+  #footer{
+    flex-direction: column;
+    min-height: auto;
+    background: #1b1b1b;
+  }
+  .sideBar{
+    display: none !important;
+  }
+  .teamCont .team{
+    flex-direction: column;
+  }
+}
