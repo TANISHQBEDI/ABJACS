@@ -7,12 +7,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { navItems,aboutDropDown,enterpriseDropdown } from './NavItems';
 import {Link} from "react-router-dom"
 
+import abjalogo from "../images/abja-logo.png"
 
 function BSNavbar(props) {
   return (
     <Navbar className='navBar' bg="light" expand="lg" style={{ position: 'sticky', top: '0' }}>
       <Container fluid>
-        <Navbar.Brand href="#"><img src="http://www.abjacs.com/wp-content/uploads/2016/02/abja-logo-2.png" alt="abjaLogo" /></Navbar.Brand>
+        <Navbar.Brand href="#"><img src={abjalogo} alt="abjaLogo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
